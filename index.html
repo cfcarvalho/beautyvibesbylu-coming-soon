@@ -1,154 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Syrup - Free Bootstrap 4 Coming Soon Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Bootstrap 4-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <!--icons-->
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-        <link rel="stylesheet" href="js/countdown/jquery.countdown.css" />
-    </head>
-    <body>
-        <!--hero section-->
-        <section class="bg-white hero p-0">
+<head>
+  <meta charset="utf-8">
+  <title>BeautyVibes By Lu - Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #d4af37;
+    }
+    .text-gold {
+      color: #d4af37 !important;
+    }
+    .bg-gold {
+      background-color: #d4af37 !important;
+    }
+    .text-black {
+      color: #000 !important;
+    }
+    .bg-black {
+      background-color: #000 !important;
+      color: #d4af37 !important;
+    }
+    a.text-gold:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3, h4, h5, .card-title, .launch-text {
+      color: inherit;
+    }
+    .embed-responsive iframe {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero section -->
+  <section class="hero p-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-5 bg-black text-center col-fixed text-gold">
+          <img src="img/logo_big.png" alt="BeautyVibes By Lu" style="max-width: 360px;" class="img-fluid">
+          <h3 class="text-gold">Salão de Beleza</h3>
+          <p class="mt-4 text-gold">
+            Cabelo, Estética e Unhas — tudo para te sentires ainda mais confiante.
+          </p>
+          <div class="launch-text text-gold">Estamos a preparar algo especial para ti.</div>
+        </div>
+        <div class="col-sm-7 offset-sm-5 px-0 py-5 bg-gold text-black">
+          <!-- About -->
+          <section class="pt-4">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-5 bg-light text-center col-fixed">
-                        <h1 class="pt-4 h2"><span class="text-green">Syrup.</span></h1>
-                        <h3>Digital Design Agency</h3>
-                        <p class="mt-4">
-                            We build beautiful things for <br/>creative people.
-                        </p>
-                        <div class="launch-text">We're launching soon.</div>
-                        <ul id="timer">
-                            <li><span class="days">00</span><p class="days_text">Days</p></li>
-                            <li class="seperator">:</li>
-                            <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-                            <li class="seperator">:</li>
-                            <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-                            <li class="seperator">:</li>
-                            <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-7 offset-sm-5 px-0 py-5">
-                        <!--Why This Domain-->
-                        <section class="pt-4">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-8 mx-auto text-center">
-                                        <h2 class="text-primary pb-3">About Us</h2>
-                                        <p class="text-muted">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row d-md-flex mt-4">
-                                    <div class="col-sm-4 mt-2 text-center">
-                                        <p><em class="ion-code-working icon-md text-primary"></em></p>
-                                        <h4>Web Design</h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                    </div>
-                                    <div class="col-sm-4 mt-2 text-center">
-                                        <p><em class="ion-ios-photos-outline icon-md text-primary"></em></p>
-                                        <h4>Digital Branding</h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                    </div>
-                                    <div class="col-sm-4 mt-2 text-center">
-                                        <p><em class="ion-help-buoy icon-md text-primary"></em></p>
-                                        <h4>24/7 Support</h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!--team-->
-                        <section id="team">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-8 mx-auto text-center">
-                                        <h2 class="text-primary pb-3">Our Team</h2>
-                                        <p class="text-muted">
-                                            We're a team of three people.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row d-md-flex mt-4 text-center">
-                                    <div class="col-sm-4 mt-2 wow fadeInLeft">
-                                        <div class="card border-none">
-                                            <div class="card-body">
-                                                <img src="img/team-1.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                                <h5 class="card-title pt-4">John Deo</h5>
-                                                <p class="card-text text-muted">App Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 mt-2 wow fadeIn">
-                                        <div class="card border-none">
-                                            <div class="card-body">
-                                                <img src="img/team-2.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                                <h5 class="card-title pt-4">Brandon Lee</h5>
-                                                <p class="card-text text-muted">Ionic Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 mt-2 wow fadeInRight">
-                                        <div class="card border-none">
-                                            <div class="card-body">
-                                                <img src="img/team-3.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                                <h5 class="card-title pt-4">Inza Fererri</h5>
-                                                <p class="card-text text-muted">Android Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!--contact-->
-                        <section class="p-0" id="contact">
-                            <div class="container">
-                                <div class="row d-md-flex text-primary text-center">
-                                    <div class="col-sm-4 p-5">
-                                        <p><em class="ion-ios-telephone-outline icon-md"></em></p>
-                                        <h5>+92 5456 87595</h5>
-                                    </div>
-                                    <div class="col-sm-4 p-5">
-                                        <p><em class="ion-ios-email-outline icon-md"></em></p>
-                                        <h5>hi@syrup.io</h5>
-                                    </div>
-                                    <div class="col-sm-4 p-5">
-                                        <p><em class="ion-ios-location-outline icon-md"></em></p>
-                                        <h5>Lahore, Pakistan</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!--footer-->
-                        <section class="mt-2">
-                            <div class="container">
-                                <div class="row mr-5 ml-5">
-                                    <div class="col-sm-12">
-                                        <p class="text-muted text-center">
-                                            &copy; 2019 Syrup Theme - All Rights Reserved
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+              <div class="row">
+                <div class="col-sm-8 mx-auto text-center">
+                  <h2 class="pb-3">Sobre Nós</h2>
+                  <p>
+                    No BeautyVibes by Lu acreditamos que a beleza é um reflexo da alma. Somos um salão especializado em cabelo, estética e unhas com foco na elegância e no bem-estar.
+                  </p>
                 </div>
+              </div>
+              <div class="row d-md-flex mt-4 text-center">
+                <div class="col-sm-4 mt-2">
+                  <p><em class="ion-scissors icon-md"></em></p>
+                  <h4>Cabelo</h4>
+                  <p>Transformações capilares modernas e personalizadas.</p>
+                </div>
+                <div class="col-sm-4 mt-2">
+                  <p><em class="ion-woman icon-md"></em></p>
+                  <h4>Estética</h4>
+                  <p>Depilação a laser, maquilhagem, volume brasileiro.</p>
+                </div>
+                <div class="col-sm-4 mt-2">
+                  <p><em class="ion-paintbrush icon-md"></em></p>
+                  <h4>Unhas</h4>
+                  <p>Manicure, pedicure e nail art com atenção ao detalhe e à criatividade.</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-        <script src="js/countdown/jquery.countdown.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+          <!-- Team -->
+          <section id="team">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-sm-8 mx-auto text-center">
+                  <h2 class="pb-3">A Nossa Equipa</h2>
+                  <p>Conhece as especialistas que fazem magia acontecer.</p>
+                </div>
+              </div>
+              <div class="row d-md-flex mt-4 text-center">
+                <div class="col-sm-4 mt-2">
+                  <div class="card bg-gold border-0">
+                    <div class="card-body">
+                      <img src="img/luciana.png" alt="Luciana" class="img-team img-fluid rounded-circle"/>
+                        <h5 class="card-title pt-4">Luciana Pereira</h5>
+                        <p class="card-text">Hairstylist</p>
+                        <div class="mt-2">
+                          <a href="https://wa.me/916987731" class="text-black mx-1" target="_blank" title="WhatsApp">
+                            <i class="ion-social-whatsapp-outline small"></i>
+                          </a>
+                          <a href="https://www.instagram.com/BeautyVibesByLu/" class="text-black mx-1" target="_blank" title="Instagram">
+                            <i class="ion-social-instagram-outline small"></i>
+                          </a>
+                           <a href="docs/luciana.pdf" class="text-black mx-1" target="_blank" title="Precário">
+                            <i class="ion-android-download small"></i>
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mt-2">
+                  <div class="card bg-gold border-0">
+                    <div class="card-body">
+                      <img src="img/susana.png" alt="Susana" class="img-team img-fluid rounded-circle"/>
+                        <h5 class="card-title pt-4">Susana Reis</h5>
+                        <p class="card-text">Estética</p>
+                        <div class="mt-2">
+                          <a href="https://wa.me/917088139" class="text-black mx-1" target="_blank" title="WhatsApp">
+                            <i class="ion-social-whatsapp-outline small"></i>
+                          </a>
+                          <a href="https://www.instagram.com/susanareis_beautyartist/" class="text-black mx-1" target="_blank" title="Instagram">
+                            <i class="ion-social-instagram-outline small"></i>
+                          </a>
+                           <a href="docs/susana.pdf" class="text-black mx-1" target="_blank" title="Precário">
+                            <i class="ion-android-download small"></i>
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mt-2">
+                  <div class="card bg-gold border-0">
+                     <div class="card-body">
+                      <img src="img/carla.png" alt="Carla" class="img-team img-fluid rounded-circle"/>
+                        <h5 class="card-title pt-4">Carla Pereira</h5>
+                        <p class="card-text">Unhas</p>
+                        <div class="mt-2">
+                          <a href="https://wa.me/916987731" class="text-black mx-1" target="_blank" title="WhatsApp">
+                            <i class="ion-social-whatsapp-outline small"></i>
+                          </a>
+                          <a href="https://www.instagram.com/carlapatricianaildesigner/" class="text-black mx-1" target="_blank" title="Instagram">
+                            <i class="ion-social-instagram-outline small"></i>
+                          </a>
+                          <a href="docs/carla.pdf" class="text-black mx-1" target="_blank" title="Precário">
+                            <i class="ion-android-download small"></i>
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact -->
+          <section class="p-0" id="contact">
+            <div class="container">
+              <div class="row d-md-flex text-black text-center">
+                <div class="col-sm-4 p-5">
+                  <p><em class="ion-ios-telephone-outline icon-md"></em></p>
+                  <h5>916 987 731</h5>
+                </div>
+                <div class="col-sm-4 p-5">
+                  <p><em class="ion-social-whatsapp-outline icon-md"></em></p>
+                  <h5><a href="https://wa.me/351916987731" class="text-black" target="_blank">WhatsApp</a></h5>
+                </div>
+                <div class="col-sm-4 p-5">
+                  <p><em class="ion-ios-location-outline icon-md"></em></p>
+                  <h5>Santa Maria da Feira, Portugal</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Social Media -->
+          <section class="pt-4 pb-3">
+            <div class="container text-center">
+              <h3 class="mb-4">Segue-nos</h3>
+              <a href="https://www.instagram.com/BeautyVibesByLu/" class="text-black mr-4" target="_blank">
+                <i class="ion-social-instagram-outline icon-md"></i> Instagram
+              </a>
+              <a href="https://www.facebook.com/BeautyVibesByLu" class="text-black ml-4" target="_blank">
+                <i class="ion-social-facebook-outline icon-md"></i> Facebook
+              </a>
+            </div>
+          </section>
+
+          <!-- Location Map -->
+          <section id="location" class="pt-4 pb-5">
+            <div class="container">
+              <div class="mb-5 text-center">
+                <h3 class="footer-heading mb-4 text-black">Localização</h3>
+                <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width: 600px;">
+                  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188.39938492488935!2d-8.555539002387805!3d40.92911555221117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23810a1332d907%3A0xa2b4a79464e03e5c!2sBeauty%20Vibes%20by%20Lu!5e0!3m2!1spt-PT!2spt!4v1729038380970!5m2!1spt-PT!2spt" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <section class="mt-2">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <p class="text-muted text-center text-black">
+                    &copy; 2025 BeautyVibes By Lu — Todos os direitos reservados
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+</body>
 </html>
